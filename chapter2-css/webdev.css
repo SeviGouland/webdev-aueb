@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&family=Roboto+Slab&display=swap');
+
+body {
+    background-image:  url('../img/adam.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.webdev-img {
+    width: 100%;
+    height: auto;
+}
+
+.webdev-header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    color: #6e241b
+}
+
+.webdev-text {
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem; 
+    color: white;
+}
+
+.fa-facebook-square, .fa-twitter-square {
+    color: blue;
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid white;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th {
+    color: blue;
+}
+
+.apply > a:hover {
+    color: red;
+}
+
+.apply > a:active {
+    color: green;
+}
+
+.apply {
+    color: white;
+}

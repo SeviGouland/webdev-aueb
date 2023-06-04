@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students <Form></title>
+</head>
+<body>
+
+    <h1>Στοιχεία Εκπαιδευομένου</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="lastname">Επώνυμο</label></td>
+                <td> <input type="text" id="lastname"></td>
+            </tr>
+            <tr>
+                <td> <label for="firstname">Όνομα</label></td>
+                <td><input type="text" id="firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="">Φύλο</label></td>
+                <td> <input type="radio" id="male" name="gender"><label for="">Άνδρας</label>
+                    <input type="radio" id="female" name="gender" checked><label for="">Γυναίκα</label></td>
+            </tr>
+            <tr>
+                <td> <label for="levelOfStudies">Επίπεδο Σπουδών</form></label></td>
+                <td> <select name="" id="levelOfStudies">
+                    <option value=""></option>
+                    <option value="BSc">BSc</option>
+                    <option value="MSc">MSc</option>
+                    <option value="PhD">PhD</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td> <label for="comments">Σχόλια</label></td>
+                <td> <textarea id="comments" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button type="submit">Αποστολή Στοιχείων</button></td>
+            </tr>
+        </table>
+    </form>
+<br>
+<hr>
+    <button type="button" onclick="console.log('Hello World')">Check Submission</button>
+</body>
+</html>
