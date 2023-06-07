@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&family=Roboto+Slab&display=swap');
+
+
+.webdev-img {
+    width: 550px;
+    height: auto;
+}
+
+.menu, li {
+    display: inline-block;
+}
+
+.menu > li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.webdev-header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+    color: #6e241b
+}
+
+.webdev-text {
+    font-family: 'QuickSand', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem; 
+    color: black;
+}
+
+.fa-facebook-square, .fa-twitter-square {
+    color: blue;
+    font-size: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th {
+    color: blue;
+}
+
+.apply > a:hover {
+    color: red;
+}
+
+.apply > a:active {
+    color: green;
+}
+
+.apply {
+    color: black;
+}
