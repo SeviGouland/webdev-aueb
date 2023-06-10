@@ -7,9 +7,14 @@
     padding: 0;
 }
 
+body, html {
+    height: 100%;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
+    height: 100%;
 }
 
 .header {
@@ -19,6 +24,8 @@
     background-color: #363636;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 .logo {
@@ -54,16 +61,18 @@
 
 .slider {
     width: 100%;
+    height: 100%;
     background-image: url('../img/art2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .title {
     width: 70%;
     margin: 0 auto;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 60px;
 }
 
@@ -72,6 +81,7 @@
     font-family: 'Roboto Slab', serif;
     font-size: 35px;
     color: white;
+    margin-top: 200px;
 }
 
 .subtitle {
@@ -85,6 +95,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 25px;
     color: rgb(243, 237, 237);
+    margin-top: 100px;
 }
 
 .main {
@@ -115,7 +126,7 @@
 
 .footer {
     width: 100%;
-    margin-top: 54px;
+    margin: 0 auto;
     padding: 30px 20px;
     overflow: hidden;
     background-color: #363636;
