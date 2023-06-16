@@ -40,7 +40,8 @@ body, html {
 
 .menu {
     width: 55%;
-    float: right;
+    position: relative;
+    
 }
 
 .menu > ul {
@@ -50,7 +51,8 @@ body, html {
 }
 
 .menu li {
-    display: inline-block;
+    list-style: none;
+    line-height: 40px;
 }
 
 .menu a {
@@ -59,7 +61,52 @@ body, html {
     font-size: 1.2rem;
 }
 
+.menu  > ul ul {
+    display: none;
+}
+
+.menu > ul > li:hover > ul {
+    display: block;
+    background-color: #363636;
+    width: 100px;
+    position: absolute;
+    top: 40px;
+}
+
+.toggle-button {
+    width: 55%;
+    display: none;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.toggle-button > button {
+    width: 60px;
+    height: 60px;
+}
+
+.toggle-menu {
+    display: none;
+    padding-top: 120px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.toggle-menu li > a {
+    text-decoration: none;
+}
+
+.toggle-menu > ul > li > a {
+    font-size: 26px;
+    color: black;
+}
+
+.toggle-menu > ul > li {
+    padding-top: 20px;
+}
+
 .slider {
+    display: block;
     width: 100%;
     height: 100%;
     background-image: url('../img/art2.png');
@@ -164,4 +211,14 @@ body, html {
     font-size: 30px;
     color: blue;
     margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
 }
