@@ -6,8 +6,8 @@ function add(a, b) {
 
 function showResults() {
     let a = 20;
-    let b = 60;
-    let result = add (a , b);
+    let b = 60; 
+    let result = add(a , b);
 
 document.write(`${a} + ${b} = ${result}`);
 }
