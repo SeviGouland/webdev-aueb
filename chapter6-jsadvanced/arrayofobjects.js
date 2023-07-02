@@ -4,6 +4,7 @@ function insertContact(contactName, phoneNumber) {
     let contact = {name: contactName, phone:phoneNumber};
     mobileContacts.push(contact);
     alert('contact inserted');
+    alert('kalisepra');
 }
 
 
