@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  <script>
+        function embarkOnMission(embark) {
+            embark();
+        }
+
+        embarkOnMission(function() {
+            document.write('Save the Princess');
+        })
+
+        document.write('<br>');
+
+        embarkOnMission(function() {
+            document.write('Kill the Dragon');
+        })
+    </script> -->
+
+   <!--  <script>
+        function embarkOnMission(mission, embark) {
+            embark(mission);
+        }
+
+        embarkOnMission('Kill the Dragon', function(mission) {
+            document.write(mission);
+        });
+
+    </script> -->
+
+    <script>
+        let saveThePrincessMisssion = 'Save the Princess';
+        function saveMission(mission) {
+            document.write(mission);
+        }
+
+        function embarkOnMission(mission, embark) {
+            embark(mission);
+        }
+
+        embarkOnMission(saveThePrincessMisssion, saveMission);
+    </script>
+    
+</body>
+</html>
