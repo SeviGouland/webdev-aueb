@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       let quorterSales = [1800, 2500, 3000, 40000];
+       let netProfits = quorterSales.map(function(value) {
+        return value * 0.7;
+       });
+
+       document.write(netProfits.join(', '));
+       document.write('<br>');
+
+       let netProfitsGreaterThan2000 = netProfits.filter((filter) => filter > 2000);
+       document.write(netProfitsGreaterThan2000.join(', '));
+       document.write('<br>');
+
+       let sumOfNetProfits = netProfits.reduce(function(total, profit) {
+        return total + profit}, 0);
+
+        document.write(sumOfNetProfits);
+</script>
+
+</body>
+</html>
