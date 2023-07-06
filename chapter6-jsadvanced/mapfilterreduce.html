@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let quarterSales = [1800, 2500, 3000, 4000];
+        let netProfits = quarterSales.map(function(value) {
+                return value * 0.7;            
+        });
+
+
+    
+        document.write(netProfits.join(', '));
+
+        document.write('<br>');
+
+        let netProfitsGreaterThan2000 = netProfits.filter((sebi) => sebi > 2000 );
+        document.write(netProfitsGreaterThan2000.join(', '));
+
+
+         
+
+
+
+
+
+    </script>
+</body>
+</html>
