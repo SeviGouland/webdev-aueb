@@ -20,3 +20,64 @@ function getGRDate() {
 
 let header = document.querySelector('.header');
 header.innerHTML = getGRDate();
+
+
+let idnum = 1;
+function insertItem() {
+    let noteName = document.getElementById('note-name');
+    let noteNameText = noteName.value;
+
+    if (noteNameText === '') {
+        return;
+    }
+
+    let newCheckBox = document.createElement('input');
+    newCheckBox.setAttribute('type', 'checkbox');
+    newCheckBox.setAttribute('id','item' + idnum);
+    newCheckBox.setAttribute('onclick', 'strikeThrough(this)');
+
+    let newlbl = document.createElement('label');
+    newlbl.setAttribute('for', 'item' + idnum);
+    newlbl.innerHTML = noteNameText;
+
+    let newdiv = document.createElement('div');
+    newdiv.setAttribute('class', 'item');
+    newdiv.appendChild(newCheckBox);
+    newdiv.appendChild(newlbl);
+
+    let newbtn = document.createElement('button');
+    newbtn.setAttribute('type', 'button');
+    newbtn.setAttribute('onclick', 'deleteItem(this.parentElement)');
+    newbtn.textContent = 'x';
+
+    let newli = document.createElement('li');
+    newli.appendChild(newdiv);
+    newli.appendChild(newbtn);
+
+    let ul = document.querySelector('.main > ul');
+    ul.appendChild(newli);
+
+    noteName.value = '';
+    idnum++;
+}
+
+document.getElementById('note-name').addEventListener('keyup', function(event) {
+    if ((event.key === 'Enter') && (document.getElementById('note-name').value != '')) {
+        insertItem();
+    }
+})
+
+function deleteItem(item) {
+    item.remove();
+}
+
+function strikeThrough(item) {
+    if (item.checked) {
+        item.nextElementSibling.style.textDecoration = 'line-through';
+        item.nextElementSibling.style.color = 'grey';
+    } else {
+        item.nextElementSibling.style.textDecoration = 'none';
+        item.nextElementSibling.style.color = 'black';
+    }
+}
+
