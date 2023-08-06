@@ -81,3 +81,28 @@ function strikeThrough(item) {
     }
 }
 
+// const result = Math.min.apply(Math, arrayNumbers);
+
+// console.log("Minimum value is: " + result);
+
+const arrayNumbers = [15, 2, 5, 3, 5];
+
+let sum = 0;
+for (let i = 0; i < 4; i++) {
+    sum = sum + arrayNumbers[i];
+}
+
+console.log(sum);
+
+    
+
+// const numbers = [2, 5, 9, 1, 6, 7, 4, 8];
+
+// let result = numbers[0];
+// for (let i=0; i < numbers.length; i++) {
+//     if (numbers[i] < result) {
+//         result = numbers[i];
+//     }
+// }
+
+// console.log("Smallest number is: " + result);
